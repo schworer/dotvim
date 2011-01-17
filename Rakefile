@@ -20,12 +20,12 @@ namespace :update do
 
   BUNDLES = {
     # plugins
-    :bufexplorer   => "http://www.vim.org/scripts/download_script.php?src_id=12363",
+    #:bufexplorer   => "http://www.vim.org/scripts/download_script.php?src_id=12363",
     :nerdcommenter => "git://github.com/scrooloose/nerdcommenter.git",
     :nerdtree      => "git://github.com/scrooloose/nerdtree.git",
     :surround      => "git://github.com/tpope/vim-surround.git",
     :tabular       => "git://github.com/godlygeek/tabular",
-    :taglist       => "http://www.vim.org/scripts/download_script.php?src_id=7701",
+    #:taglist       => "http://www.vim.org/scripts/download_script.php?src_id=7701",
 
     # syntax definitions
     :syntax_cucumber  => "git://github.com/tpope/vim-cucumber.git",
@@ -34,7 +34,7 @@ namespace :update do
     :syntax_rdoc      => "git://github.com/hallison/vim-rdoc.git",
     :syntax_slidedown => "git://github.com/bleything/vim-slidedown.git",
     :syntax_textile   => "git://github.com/timcharper/textile.vim.git",
-    :syntax_twiki     => "http://www.vim.org/scripts/download_script.php?src_id=6460",
+    #:syntax_twiki     => "http://www.vim.org/scripts/download_script.php?src_id=6460",
   }
 
   desc "update any bundles defined in the Rakefile"
