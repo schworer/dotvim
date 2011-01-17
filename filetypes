@@ -33,3 +33,4 @@ autocmd BufNewFile,BufRead ~/.bash/* setfiletype sh
 
 " set tab indent on python
 autocmd FileType python set foldmethod=indent
+au BufWinEnter *.py let w:m1=matchadd('DiffAdd', '\%>79v.\+', -1)
