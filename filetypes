@@ -26,6 +26,9 @@ autocmd FileType help set nolist
 " twiki files
 autocmd BufNewFile,BufRead *.twiki set filetype=twiki
 
+" vagrantfiles are ruby
+autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+
 " set filetype on config files for vim and mutt
 autocmd BufNewFile,BufRead ~/.vim/*  setfiletype vim
 autocmd BufNewFile,BufRead ~/.mutt/* setfiletype muttrc
@@ -34,3 +37,8 @@ autocmd BufNewFile,BufRead ~/.bash/* setfiletype sh
 " set tab indent on python
 autocmd FileType python set foldmethod=indent
 au BufWinEnter *.py let w:m1=matchadd('DiffAdd', '\%>79v.\+', -1)
+
+source $HOME/.vim/syntax/cg.vim
+autocmd BufNewFile,BufRead *.cgfx set filetype=cg
+autocmd FileType cg set foldmethod=indent
+
